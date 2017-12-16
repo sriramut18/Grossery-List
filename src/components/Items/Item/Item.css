@@ -1,0 +1,64 @@
+.Item {
+    margin: 10px auto;
+    box-sizing: border-box;
+    border:1px solid greenyellow;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 16px;
+    text-align: center;
+    flex-basis: 49%;
+    color: white;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.Item>*{
+    margin: 0 5px;
+}
+
+.Item input{
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 2px 5px;
+    color: rgb(24, 53, 24);
+    width: 100%;
+}
+
+.Item .edit{
+    display: flex;
+    flex-basis: 48%;
+    flex-wrap: wrap;
+}
+
+.Item .edit>*{
+    margin: 2px 5px;   
+    justify-content: flex-start;
+}
+
+.Item>div{
+    display:flex;
+    align-items: center;
+}
+
+@media (min-width: 600px){
+    .Item {
+        width: 80%;
+    }
+}
+
+.inline{
+    display: inline-block;
+}
+
+.Item .inline{
+    flex-grow: 7;
+}
+
+.Item  button{
+    flex-grow: 1;
+}
+
+.Item edit{
+    flex-grow: 7;
+}

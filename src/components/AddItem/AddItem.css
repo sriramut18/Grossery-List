@@ -1,0 +1,40 @@
+.addItem{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0; 
+    width: 80%;
+    margin:20px auto 0;
+}
+
+.addItem div>*{
+    margin: 0 5px;
+}
+
+.addItem input{
+    border: 2px solid rgb(106, 167, 121);
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 2px 5px;
+    color: rgb(24, 53, 24);
+}
+
+@media all and (max-width: 800px) {
+    .addItem{ 
+        flex-flow:column;
+        align-items: center;
+        width:90%;
+        margin: 20px auto;
+    }
+    .addItem div>*{
+        margin: 5px;
+    }
+    .addItem div{
+        display:flex;
+        flex-flow:column;
+    }
+
+    .addItem>input{
+        margin-top: 10px;
+    }
+  }
